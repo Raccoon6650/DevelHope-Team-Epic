@@ -101,7 +101,7 @@ main {
 	border-radius: 20px;
 	position: relative;
 	cursor: pointer;
-	
+
 }
 
 .main_carousel_game_div {
@@ -325,6 +325,8 @@ main {
   justify-content: center;
   border: 1px solid;
   gap: 30px;
+  
+
 }
 .main__container__cards--top {
   width: 75%;
@@ -521,11 +523,11 @@ footer > p {
 	padding: 16px 0;
 
 }
-.copyright{	
+.copyright{
 	width: 105ch;
-	text-align: left;	
+	text-align: left;
 	padding: 6px 0 0;
-	font-size: 11.63px;	
+	font-size: 11.63px;
     font-weight: 400;
 	line-height: 2em;
 }
@@ -590,12 +592,12 @@ footer > p {
 
 .footer__resource--links>li>a:hover {
 	color: var(--theme-color);
-	transition: 0.3s;	
+	transition: 0.3s;
 }
 .footer__icons{
 	padding-top: 16px;
 	display: flex;
-	justify-content: space-between;	
+	justify-content: space-between;
 }
 .footer__icon--top{
 	padding-right: 16px;
@@ -611,7 +613,7 @@ footer > p {
 	fill: var(--icons-color);
 	width: 28px;
 	height: 31px;
-	
+
 }
 
 .footer--icon:hover {
@@ -627,7 +629,7 @@ footer > p {
 
 .footer__nav--icon {
 	fill: var(--icons-color);
-	padding-right: 6px;	
+	padding-right: 6px;
 }
 
 .footer__nav--icon:hover {
