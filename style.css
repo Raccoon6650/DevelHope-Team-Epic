@@ -149,29 +149,22 @@ table {
 
 /* Sezione carosello */
 
-main {
-  width: 75%;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 #main_carousel_section {
   margin-bottom: 50px;
   background-color: var(--background-color);
 }
 
 .main_carousel_div {
-  width: 100%;
-  height: 100%;
+  width: 75%;
   background-color: var(--background-color);
   display: flex;
+  padding: 20px;
   margin: auto;
 }
 
 .main_carousel_game {
   background-image: url("resources/dead-space-banner.jpg");
-  background-image: center;
-  background-size: 1600px;
+  background-size: 1300px;
   width: 80%;
   height: 700px;
   background-color: #cccccc;
@@ -185,29 +178,22 @@ main {
   flex-direction: column;
   align-items: flex-start;
   justify-content: space-between;
-  width: 40%;
-  height: 60%;
+  width: 30%;
+  height: 50%;
   position: absolute;
-  bottom: 0;
-  left: 50px;
+  bottom: 20px;
+  left: 20px;
 }
 
 .main_carousel_game_logo {
   position: relative;
+  top: 20px;
+  left: 10px;
 }
 
 .main_carousel_game_description {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
   width: 100%;
   height: 100%;
-  position: absolute;
-}
-
-.main_carousel_game_description_div {
-  width: 100%;
-  height: 60%;
   position: absolute;
   top: 30%;
 }
@@ -216,7 +202,7 @@ main {
   color: var(--font-color-active);
   display: block;
   font-size: 1rem;
-  margin-bottom: 15px;
+  margin: 15px;
   font-weight: 400;
   font-family: inherit;
 }
@@ -225,23 +211,13 @@ main {
   font-size: 1.5rem;
 }
 
-.main_carousel_game_description_buy {
-  position: relative;
-  height: 50%;
-  color: var(--font-color-active);
-  font-size: 1rem;
-}
-
-.main_carousel_game_description_buy > span {
-  position: absolute;
-  bottom: 60px;
-}
-
 .main_carousel_big_buttons {
-  position: absolute;
+  margin-top: 30px;
+  position: relative;
   display: flex;
   align-items: center;
-  bottom: 0;
+  justify-content: space-around;
+  margin-left: 10px;
 }
 
 .main_carousel_buy_button {
@@ -253,7 +229,6 @@ main {
   border-style: solid;
   cursor: pointer;
   font-family: inherit;
-  margin-right: 10px;
 }
 
 .main_carousel_wish_button {
@@ -332,25 +307,23 @@ main {
 .main_explore_div {
   display: flex;
   justify-content: center;
-  width: 100%;
+  width: 75%;
   margin: auto;
 }
 
 .main_explore_div_img {
-  background-color: white;
-  border-radius: 22px;
+  border-radius: 20px;
   width: 63%;
   cursor: pointer;
 }
 
 .main_explore_div_img > img {
   width: 100%;
-  height: 100%;
   border-radius: 20px;
 }
 
 .main_explore_div_img:hover img {
-  opacity: 0.9;
+  opacity: 0.8;
   transition: 0.3s;
 }
 
