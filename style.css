@@ -380,6 +380,7 @@ table {
   display: flex;
   justify-content: center;
   gap: 30px;
+  margin: 1rem;
 }
 .main__container__cards--top {
   display: flex;
