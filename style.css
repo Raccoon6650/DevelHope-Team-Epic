@@ -85,6 +85,7 @@ table {
 	margin-left: auto;
 	margin-right: auto;
 	width: 75%;
+	color: var(--font-color-active);
 }
 
 .card__list__container__li {
