@@ -54,9 +54,9 @@ table {
 :root {
 	font-family: 'Inter', sans-serif;
 	/* footer e nav font-family: OpenSans,sans-serif,arial; */
-	font-size: 14px;
-	line-height: 20px;
-	letter-spacing: 0.2px;
+	font-size: 0.875rem;
+	line-height: 1.25rem;
+	letter-spacing: 0.0125rem;
 	--theme-color: #007aff;
 	--background-color: #121212;
 	--main-color: #2a2a2a;
@@ -70,50 +70,60 @@ table {
 /* Footer style */
 footer {
 	font-family: 'Open Sans', sans-serif;
-	font-size: 13px;
+	font-size: 0.8125rem;
 	color: var(--icons-color);
 	background-color: var(--main-color);
 	display: flex;
 	flex-direction: column;
-	padding: 20px 72px 40px
+	padding: 1.25rem 4.5rem 2.5rem;
 }
 
-footer > p {
+footer>p {
 	color: #656565;
-	margin: 0 0 4px;
+	margin: 0 0 0.25rem;
 	font-weight: 700;
-	padding: 20.6px 0 0;
+	padding: 1.2875rem 0 0;
 }
-.footer__copyright{
+
+.footer__copyright {
+	display: flex;
+	justify-content: start;
 	margin: 0;
-	padding: 16px 0;
+	padding: 1rem 0;
 
 }
-.copyright{	
+
+.copyright {
 	width: 105ch;
-	text-align: left;	
-	padding: 6px 0 0;
-	font-size: 11.63px;	
-    font-weight: 400;
-	line-height: 2em;
+	text-align: left;
+	padding: 0.375rem 0 0;
+	font-size: 0.726875rem;
+	font-weight: 400;
+	line-height: 2rem;
 }
 
 .footer__resource {
-	display: flex;
-	padding-top: 6px;
+	display: grid;
+	grid-template-columns: auto auto auto;
+	justify-content: start;
+	padding-top: 0.375rem;
 }
 
 .footer__epic {
-	display: flex;
-	padding-top: 6px;
+	display: grid;
+	grid-template-columns: auto auto;
+	justify-content: start;
+	padding-top: 0.375rem;
 }
+
 .footer__resource--links,
-.footer__epic--links{
-	padding: 0 24px 8px 0;
+.footer__epic--links {
+	padding: 0 1.5rem 0.5rem 0;
 }
-.footer__resource--links >li,
-.footer__epic--links >li{
-	line-height: 2em;
+
+.footer__resource--links>li,
+.footer__epic--links>li {
+	line-height: 2rem;
 }
 
 .footer__resource--links>li>a {
@@ -124,18 +134,23 @@ footer > p {
 .footer__nav {
 	display: flex;
 	justify-content: space-between;
-	padding: 16px 0 0 0;
+	flex-wrap: wrap;
+	gap: 2rem;
+	padding: 1rem 0 0 0;
 }
 
 .footer__nav--links {
-	display: flex;
+	display: grid;
+	grid-template-columns: auto auto auto auto;
+	justify-content: start;
 }
 
-.footer__nav--links>li{
-	padding: 0 16px 0 0;
-	font-size: 12px;
+.footer__nav--links>li {
+	padding: 0 1rem 0 0;
+	font-size: 0.75rem;
 	align-self: flex-end;
 }
+
 .footer__nav--links>li>a {
 	color: var(--font-color-active);
 	text-decoration: none;
@@ -158,47 +173,100 @@ footer > p {
 
 .footer__resource--links>li>a:hover {
 	color: var(--theme-color);
-	transition: 0.3s;	
+	transition: 0.3s;
 }
-.footer__icons{
-	padding-top: 16px;
+
+.footer__icons {
+	padding-top: 1rem;
 	display: flex;
-	justify-content: space-between;	
+	justify-content: space-between;
 }
-.footer__icon--top{
-	padding-right: 16px;
+
+.footer__icon--top {
+	padding-right: 1rem;
 }
-.footer__icon--social >.footer--icon{
-	padding-right: 8px;
+
+.footer__icon--social>.footer--icon {
+	padding-right: 0.5rem;
 }
-.footer__icon--top >.footer--icon{
-	width: 33.6px;
-	height: 33.6px;
+
+.footer__icon--top>.footer--icon {
+	width: 2.1rem;
+	height: 2.1rem;
 }
+
 .footer--icon {
 	fill: var(--icons-color);
-	width: 28px;
-	height: 31px;
-	
+	width: 1.75rem;
+	height: 2rem;
 }
 
 .footer--icon:hover {
 	fill: var(--theme-color);
 	transition: 0.3s;
 }
-.footer__hr{
-	padding-top: 16px;
+
+.footer__hr {
+	padding-top: 1rem;
 }
-.footer__hr> hr{
-	border: 1px solid #5151514c;
+
+.footer__hr>hr {
+	border: 0.0625rem solid #5151514c;
+}
+
+.footer__nav--icons {
+	display: flex;
+	gap: 0.375rem;
 }
 
 .footer__nav--icon {
 	fill: var(--icons-color);
-	padding-right: 6px;	
 }
 
 .footer__nav--icon:hover {
 	fill: var(--button-color);
 	transition: 0.3s;
+}
+
+@media (max-width: 786px) {
+	.footer__resource {
+		grid-template-columns: auto auto;
+		grid-template-rows: auto;
+
+	}
+
+	.footer__nav--links {
+		grid-template-columns: auto auto;
+		grid-template-rows: auto auto;
+		row-gap: 1rem;
+	}
+
+	.footer__nav {
+		display: grid;
+		grid-template-columns: auto;
+		grid-template-rows: auto;
+		row-gap: 2rem;
+	}
+}
+
+/* media query */
+@media (max-width: 480px) {
+	.footer__resource {
+		grid-template-columns: auto;
+		grid-template-rows: auto;
+
+	}
+
+	.footer__epic {
+		grid-template-columns: auto;
+		grid-template-rows: auto;
+	}
+
+	.footer__nav--links {
+		grid-template-columns: auto;
+		grid-template-rows: auto;
+		row-gap: 1rem;
+	}
+
+
 }
