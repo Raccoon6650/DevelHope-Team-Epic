@@ -113,7 +113,25 @@ table {
 	transition: 60ms;
 	opacity: 1;
 }
+ 
+.first_price{
+	text-decoration:line-through ;
+	margin-right: 0.7rem;
+	color: rgb(204, 204, 204, 0.4);
+}
 
+.percentage{
+	color: var(--font-color-active);
+	width: fit-content;	
+	font-size: 0.65rem;
+	line-height: 0.9375rem;
+	letter-spacing: 0.0625rem;
+	font-weight: 600;
+	padding: 0.3rem 0.6rem;
+	margin-right: 1rem;
+	border-radius: 0.25rem;
+	background-color: #007aff;
+}
 .main__container__cards__list__li:nth-child(1),
 .main__container__cards__list__li:nth-child(2) {
 	border-right: 0.0625rem solid rgba(255, 255, 255, 0.1);
@@ -168,6 +186,8 @@ table {
 }
 
 .card__list__price {
+	display: flex;
+	align-items: center;
 	font-size: 0.86rem;
 }
 
