@@ -6,26 +6,25 @@ main {
 	margin-right: auto;
 }
 
-#main_carousel_section {
+#main__carousel_section {
     margin-top: 8rem;
 	margin-bottom: 50px;
 	background-color: var(--background-color);
-	height: 70vh;
-	min-height: 650px;
-    
+	height: 65vh;
+	overflow-y: hidden;
 }
 
-.main_carousel_div {
+.main__carousel_div {
 	width: 100%;
 	height: 100%;
 	background-color: var(--background-color);
 	display: flex;
-
+	min-height: max-content;
 }
 
-.main_carousel_game {
+.main__carousel_game {
 	background-image: url('https://cdn2.unrealengine.com/egs-deadspace-motivestudio-g1a-08-1920x1080-51142bbd1bc3.jpg');
-	background-image: center;
+	background-position: center;
 	width: 100%;
 	height: auto;
 	background-color: #cccccc;
@@ -35,7 +34,7 @@ main {
 	
 }
 
-.main_carousel_game_div {
+.main__carousel_game_div {
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
@@ -47,11 +46,11 @@ main {
 	position: absolute;
 }
 
-.main_carousel_game_logo > img{
+.main__carousel_game_logo > img{
 	width: 240px;
 }
 
-.main_carousel_game_description {
+.main__carousel_game_description {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
@@ -59,63 +58,63 @@ main {
 	height: 50%;
 }
 
-.main_carousel_game_description_div {
+.main__carousel_game_description_div {
 	width: 100%;
 }
 
-.main_carousel_game_description > span {
+.main__carousel_game_description > span {
 	color: var(--font-color-active);
 	font-size: 1rem;
 	font-weight: 400;
 	font-family: inherit;
 }
 
-.main_carousel_game_description > span:nth-child(2) {
+.main__carousel_game_description > span:nth-child(2) {
 	font-size: 1.5rem;
 }
 
-.main_carousel_game_description_buy {
+.main__carousel_game_description_buy {
 	position: relative;
 	height: 50%;
 	color: var(--font-color-active);
 	font-size: 1rem;
 }
 
-.main_carousel_big_buttons {
+.main__carousel_big_buttons {
 	display: flex;
 	align-items: center;
-	gap: 0.5rem;
+	gap: 1rem;
 }
 
-.main_carousel_buy_button {
+.btn {
+	background-color: white;
 	padding: 1.5rem;
-	background-color: var(--font-color-active);
 	border-radius: 5px;
-	border-color: var(--font-color-active);
-	border-style: solid;
+	border-style: none;
 	cursor: pointer;
 	font-family: inherit;
 }
 
-.main_carousel_wish_button {
-	padding: 1.5rem;
+.main__carousel_buy_button {
+	background-color: white;
+}
+
+.main__carousel_wish_button {
+	padding: 1.2rem;
 	display: flex;
 	align-items: center;
-	justify-content: space-between;
-	font-size: 0.8rem;
+	justify-content: space-around;
 	background-color: transparent;
-	border-color: transparent;
-	cursor: pointer;
-	border-radius: 5px;
 	color: var(--font-color-active);
-	font-family: inherit;
+	gap: 1rem;
+	transition: 0.3s;
 }
 
-.main_carousel_wish_button:hover {
+.main__carousel_wish_button:hover {
 	background-color: rgba(255, 255, 255, 0.244);
 }
 
-.main_carousel_game_list {
+.main__carousel_game_list {
 	margin-left: 1.2rem;
 	width: 20%;
 	display: flex;
@@ -124,7 +123,7 @@ main {
 	justify-content: space-around;
 }
 
-.main_carousel_game_list > a {
+.main__carousel_game_list > a {
 	text-decoration: none;
 	border-radius: 20px;
 	width: 100%;
@@ -132,21 +131,23 @@ main {
 	background-color: #12121200;
 }
 
-.main_carousel_game_list a div > img {
-	width: 40%;
+.main__carousel_game_list a div > img {
+	width: 35%;
+	min-width: 50px;
 	border-radius: 8px;
 	margin-right: 0.8rem;
 	margin-left: 1rem;
 }
 
-.main_carousel_game_list > a:hover {
+.main__carousel_game_list > a:hover {
 	background-color: rgba(255, 255, 255, 0.123);
 	transition: 0.3s;
 }
 
-.main_carousel_game_list a > div {
+.main__carousel_game_list a > div {
 	color: var(--font-color-active);
-	font-size: 1.2rem;
+	font-size: 1.1rem;
+	line-height: 1.3;
 	width: 90%;
 	height: 100%;
 	display: flex;
@@ -154,77 +155,116 @@ main {
 	justify-content: space-between;
 }
 
-.main_carousel_list_description  {
+.main__carousel_list_description  {
      width: 90%;
 }
 
+@media (max-width:1400px) {
+	#main__carousel_section{
+		height: 100%;
+	}
+	.main__carousel_game {
+		display: none;
+	}
+	.main__carousel_game_list {
+		width: 100%;
+		height: 100%;
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+		gap: 1rem;
+	}
+	.main__carousel_game_list a > div {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+	}
+	.main__carousel_game_list a div > img {
+		border-radius: 20px;
+		width: 100%;
+		height: 90%;
+	}
+    .main__carousel_game_list a div>img:hover {
+		opacity: 0.5;
+		transition: 0.3s;
+	}
+    .main__carousel_list_description{
+		width: 100%;
+	}
+    .main__carousel_list_description > span {
+		text-align: center;
+		display: block;
+		width: 100%;
+		font-size: 1.3rem;
+		font-family: inherit;
+	}
+	.main__carousel_game_list > a:hover {
+        background-color: var(--background-color);
+	}
+}
+   
 /* Sezione esplora */
 
-#main_explore_section {
+#main__explore_section {
 	margin-bottom: 50px;
 	background-color: var(--background-color);
 }
 
-.main_explore_div {
-	display: flex;
-	justify-content: center;
+.main__explore_div {
+	display: grid;
+	grid-template-columns: 60% 40%;
 	width: 100%;
-	margin: auto;
 }
 
-.main_explore_div_img {
+.main__explore_div_img {
 	background-color: white;
 	border-radius: 22px;
-	width: 63%;
+	width: 100%;
 	cursor: pointer;
 }
 
-.main_explore_div_img > img {
+.main__explore_div_img > img {
 	width: 100%;
 	height: 100%;
 	border-radius: 20px;
 }
 
-.main_explore_div_img:hover img {
+.main__explore_div_img:hover img {
 	opacity: 0.9;
     transition: 0.3s;
 }
 
-.main_explore_description {
-	width: 37%;
+.main__explore_description {
+	width: 100%;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	margin-left: 4rem;
+	gap: 3rem;
 }
 
-.main_explore_description_text {
+.main__explore_description_text {
 	height: 20%;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
 }
 
-.main_explore_description_text > span:first-child {
+.main__explore_description_text > span:first-child {
 	color: var(--font-color-active);
 	font-size: 1.8rem;
 }
 
-.main_explore_description_text > span:nth-child(2) {
+.main__explore_description_text > span:nth-child(2) {
 	font-size: 1.1rem;
     color: rgba(245, 245, 245, 0.6);
 }
+ @media (max-width:1100px) {
+    .main__explore_div {
+	grid-template-columns: 1fr;
+	}
+	.main__explore_description{
+		margin: 0;
+	}
 
-.main_explore_description_button {
-    margin-top: 4rem;
-}
-
-.main_explore_description_button > button {
-    padding: 1.5rem;
-	background-color: var(--font-color-active);
-	border-radius: 5px;
-	border-color: var(--font-color-active);
-	border-style: solid;
-	cursor: pointer;
-	font-family: inherit;
-}
+ }
