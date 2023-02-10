@@ -79,7 +79,7 @@ table {
 	font-size: .75em;
 }
 
-.nav_dx{
+.nav__dx{
 	width:25%;
 	display: flex;
 	align-items: center;
@@ -87,14 +87,14 @@ table {
 	color: var(--icons-color);
 	gap: 20px;
 }
-.nav_sx{
+.nav__sx{
 	width: 35%;
 	display: flex;
 	align-items: center;
 	justify-content: space-around;
 	gap: 0.4rem;
 }
-.nav_sx_logo{
+.nav__sx__logo{
 	padding: 6px;
 }
 .nav_sx_link{
@@ -102,14 +102,14 @@ table {
     justify-items: stretch;    
 } 
 
-.nav_sx_link:hover{
+.nav__sx__link:hover{
     
     border-bottom: 0.2rem solid var(--theme-color);
 
 }
 
 
-.nav_link {
+.nav__link {
 	text-decoration: none;
 	transition: text-decoration 500ms;
 	color: var(--icons-color);
@@ -134,7 +134,7 @@ table {
 	text-decoration: none;
 }
 
-.nav_mondo{
+.nav__mondo{
 	display: flex;
 	margin-top: 10%;
 	position: relative;
@@ -143,7 +143,7 @@ table {
 	width: auto;
 }
 
-.nav_list{
+.nav__list{
     display: none;
     cursor: pointer;
     position:absolute;
@@ -156,7 +156,7 @@ table {
 	z-index: 3;
 }
 
-.nav_mondo:hover .nav_list{
+.nav__mondo:hover .nav__list{
     display: block;
 	text-decoration: none;
 	width: 100%;
@@ -164,7 +164,7 @@ table {
 	background: var(--main-color);
 }
 
-.nav_interno{
+.nav__interno{
 	display: flex;
 	text-align: center;
 	justify-content: center;
@@ -176,18 +176,18 @@ table {
 	font-size: 10px;
 }
 
-.nav_interno:hover{
+.nav__interno:hover{
 	display: block;
 	text-decoration: none;
 	color: var(--button-color);
 }
 
-.nav_user_container{
+.nav__user__container{
 	position: relative;
     cursor: pointer;
 }
 
-.nav_user{
+.nav__user{
 	display: flex;
 	align-items: center;
     cursor: pointer;
@@ -196,7 +196,7 @@ table {
 	
 }
 
-.nav_user_list{
+.nav__user__list{
     display: none;
     cursor: pointer;
     position:absolute;
@@ -210,7 +210,7 @@ table {
     width: 25%;
 }
 
-.nav_user_container:hover .nav_user_list{
+.nav__user__container:hover .nav__user__list{
 	display: block;
     cursor: pointer;
 	width: 100%;
@@ -239,19 +239,26 @@ table {
 .nav2__container{
     width: 75%;
     display: flex;
+	flex-direction: row;
     justify-content: space-between;
     align-items: center;
     margin-left: auto;
     margin-right: auto;
 }
 
-.nav_ricerca_sinistra{
+.nav_ricerca__sinistra{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.nav__ricerca__sinistra{
 	display: flex;
 	align-items: center;
 	width: 50%;
 }
 
-.nav_serch{
+.nav__serch{
 	display: flex;
 	background-color: #2A2A2A;
 	border-radius: 20px;
@@ -261,41 +268,41 @@ table {
 
 }
 
-.nav_ric {
+.nav__ric {
 	background-color: transparent;
 	height: 40px;
 	border-style: none;
 	color: #ffffff;
 }
 
-.nav_ric:focus {
+.nav__ric:focus {
 outline: none;
 }
 
-.nav_lente{
+.nav__lente{
 	width:10.8px;
 	height:10.8px;
 	margin: 0px 10px;
 }
 
-.nav_ricerca_interna{
+.nav__ricerca__interna{
 	display: flex;
 	justify-content: space-around;
-	width: 30%;
+	width: 50%;
 
 }
 
-.nav_link_2{
+.nav__link__2{
 	margin-left: 40px;
 	text-decoration: none;
 	color: var(--font-color-disable);
 }
 
-.nav_link_2:hover{
+.nav__link__2:hover{
 	color: var(--button-color) ;
 }
 
-.main_gratis{
+.main__gratis{
 	background-color: rgba(255, 255, 255, 0.1) ;
 	display: flex;
 	flex-direction: column;
@@ -304,20 +311,22 @@ outline: none;
 	top: 300px;
     padding: 1rem;
     gap: 1rem;
+	width: 75%;
+	margin-left: 11%;
 
 }
 
-.main_gratis_intestazione{
+.main__gratis__intestazione{
 	display: flex;
 	justify-content: space-between;
 	width: 100%;
 }
 
-.main_gratis_intestazione > div{
+.main__gratis__intestazione > div{
     display: flex;
 }
 
-.main_gratis_visualizza{
+.main__gratis__visualizza{
 	background-color: rgba(255, 255, 255, 0.1) ;
 	color: var(--font-color-active);
 	border: 2px solid var(--font-color-active);
@@ -328,39 +337,39 @@ outline: none;
     
 }
 
-.main_giochi_gratis{
+.main__giochi__gratis{
 display: grid;
 grid-template-columns: 1fr 1fr 1fr 1fr;
 grid-template-rows: 1fr;
 column-gap: 5%;
 }
 
-.main_card{
+.main__card{
     width: 100%;
 	cursor: pointer;
 }
 
-.main_ora_gratis{
+.main__ora__gratis{
 	display: flex;
 	background-color: var(--theme-color);
 	justify-content: center;
 	position: relative;
 	bottom: 15px;
 }
-.main_in_arrivo {
+.main__in__arrivo {
 	display: flex;
 	background-color: var(--background-color);
 	justify-content: center;
 	position: relative;
 	bottom: 15px;
 }
-.main_gratis_txt{
+.main__gratis__txt{
 	font-weight: bold;
 	color: var(--font-color-active);
 	cursor: pointer;
 }
 
-.main_gratis_disp{
+.main__gratis__disp{
 	color: var(--font-color-active);
 }
 
