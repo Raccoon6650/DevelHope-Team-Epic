@@ -91,7 +91,7 @@ table {
 	width: 35%;
 	display: flex;
 	align-items: center;
-	justify-content: space-around;
+	justify-content:left;
 	gap: 0.4rem;
 }
 .nav__sx__logo{
@@ -246,16 +246,11 @@ table {
     margin-right: auto;
 }
 
-.nav_ricerca__sinistra{
+.nav__ricerca__sinistra{
 	display: flex;
 	flex-direction: row;
 	align-items: center;
-}
-
-.nav__ricerca__sinistra{
-	display: flex;
-	align-items: center;
-	width: 50%;
+	width: 35%;
 }
 
 .nav__serch{
@@ -309,17 +304,22 @@ outline: none;
 	justify-content: center;
 	align-items: center;
 	top: 300px;
-    padding: 1rem;
+    padding: 2rem;
     gap: 1rem;
 	width: 75%;
 	margin-left: 11%;
-
 }
 
 .main__gratis__intestazione{
 	display: flex;
 	justify-content: space-between;
 	width: 100%;
+}
+
+.main__icon__gratis__pack{
+	display: flex;
+	align-items: center;
+	width: 30%;
 }
 
 .main__gratis__intestazione > div{
@@ -344,7 +344,11 @@ grid-template-rows: 1fr;
 column-gap: 5%;
 }
 
-.main__card{
+.main__gratis__testo{
+	color: var(--button-color);
+}
+
+.main__gratis__card{
     width: 100%;
 	cursor: pointer;
 }
