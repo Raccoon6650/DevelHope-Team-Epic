@@ -237,7 +237,7 @@ table {
 }
 
 .nav2__container{
-    width: 75%;
+    width: 100%;
     display: flex;
 	flex-direction: row;
     justify-content: space-between;
@@ -306,8 +306,7 @@ outline: none;
 	top: 300px;
     padding: 2rem;
     gap: 1rem;
-	width: 80%;
-	margin-left: 7%;
+	width: 100%;
 }
 
 .main__gratis__intestazione{
