@@ -339,10 +339,11 @@ main {
 }
 
    .main__cards_description_div > span:nth-child(3) {
+	width: 90%;
 	font-size: 1.1rem;
 	color: rgb(245, 245, 245, 0.6);
 	font-weight: normal;
-	line-height: ;
+	line-height: 20px;
 }
 
  .link {
