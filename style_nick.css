@@ -272,6 +272,7 @@ main {
 
  .main__news_section {
 	width: 100%;
+	margin-bottom: 3rem;
  }
 
  .main__news_section > h2 {
@@ -322,7 +323,7 @@ main {
 	position: relative;
  }
 
- .main__cards_description_div > span:nth-child(1) {
+ .main__news_span_date {
 	font-size: 0.8rem;
 	font-weight: 500;
 	color: rgb(245, 245, 245, 0.6);
@@ -338,7 +339,7 @@ main {
 	font-weight: bold;
 }
 
-   .main__cards_description_div > span:nth-child(3) {
+.main__news_span {
 	width: 90%;
 	font-size: 1.1rem;
 	color: rgb(245, 245, 245, 0.6);
@@ -364,4 +365,65 @@ main {
  }
 
 
+/* news list section */
+
+.main__section_news_list {
+	width: 100%;
+	height: 100%;
+	min-height: 135px;
+}
+
+.main__news_list_container {
+	width: 100%;
+	height: 90%;
+	display: flex;
+	border-top: 1px solid rgba(245, 245, 245, 0.185);
+	padding: 1.5rem 0;
+}
+
+.main__news_image {
+	background-color: white;
+	min-width: 200px;
+	height: 112.5px;
+	border-radius: 5px;
+}
+
+.main__news_image > img {
+	width: 100%;
+	height: 100%;
+	border-radius: 4px;
+}
+
+.main__news_image > img:hover {
+	opacity: 0.8;
+	transition: 0.5s;
+ }
+
+.main__news_list_description {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	margin-left: 1.2rem;
+}
+
+.main__news_counter {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 1.2rem;
+	color: gray;
+	font-size: 1.2rem;
+	margin-bottom: 6rem;
+}
+
+.main__news_counter > a {
+	text-decoration: none;
+	color: gray;
+}
+
+.main__news_counter > a:hover {
+	color: white;
+	font-weight: bold;
+}
 
