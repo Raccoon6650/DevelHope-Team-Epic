@@ -1,7 +1,10 @@
 .main__container {
   width: 100%;
   height: auto;
-  margin: 3rem;
+  margin: 5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
 }
 .main__container .main__container-cards-top {
   width: 100%;
@@ -29,6 +32,7 @@
 }
 .main__container .main__container-cards-top .main__container-bar .bar__container span a {
   text-decoration: none;
+  color: #f5f5f5;
 }
 .main__container .main__container-cards-top .main__container-bar .bar__container .svg-arrow {
   width: 2rem;
@@ -70,19 +74,131 @@
   width: 100%;
   display: flex;
   gap: 1rem;
-  flex-wrap: nowrap;
 }
 .main__container .main__container-cards-top .main__container-cards .container-card {
-  width: auto;
+  width: 250px;
   height: auto;
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
 }
-.main__container .main__container-cards-top .main__container-cards .container-card img {
+.main__container .main__container-cards-top .main__container-cards .container-card .container-card-img {
+  position: relative;
+}
+.main__container .main__container-cards-top .main__container-cards .container-card .container-card-img img {
   width: 100%;
   height: 100%;
   border-radius: 0.3rem;
 }
-.main__container .main__container-cards-top .main__container-cards .container-card .game {
+.main__container .main__container-cards-top .main__container-cards .container-card .container-card-img .add-game {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  background-color: white;
+  border: 2px solid white;
+}
+.main__container .main__container-cards-top .game {
   width: 100%;
+}
+.main__container .main__container-cards-top .base {
+  font-size: 9px;
+  color: rgba(245, 245, 245, 0.6);
+  letter-spacing: 1px;
+  font-weight: 500;
+}
+.main__container .main__container-cards-top .promo {
+  display: flex;
+  gap: 1rem;
+  font-size: 14px;
+  align-items: center;
+  line-height: 15px;
+}
+.main__container .main__container-cards-top .promo .percentage {
+  background-color: rgb(0, 116, 228);
+  border-radius: 0.3rem;
+  padding: 0.5rem;
+  font-size: 9px;
+  padding: 5px 10px;
+  letter-spacing: 1px;
+  font-weight: 500;
+}
+.main__container .main__container-cards-top .promo .new-offer, .main__container .main__container-cards-top .promo .old-offer {
+  letter-spacing: 0.2px;
+  font-weight: normal;
+}
+.main__container .main__container-cards-top .promo .old-offer {
+  text-decoration: line-through;
+  color: rgba(245, 245, 245, 0.6);
+}
+.main__container .main__container-cards-bottom {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 1.5rem;
+  overflow-x: visible;
+}
+.main__container .main__container-cards-bottom .container-card {
+  width: auto;
+  height: auto;
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+}
+.main__container .main__container-cards-bottom .container-card .container-card-img {
+  position: relative;
+}
+.main__container .main__container-cards-bottom .container-card .container-card-img img {
+  width: 100%;
+  height: 100%;
+  border-radius: 0.3rem;
+}
+.main__container .main__container-cards-bottom .container-card .container-card-img .add-game {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  background-color: white;
+  border: 2px solid white;
+}
+.main__container .game {
+  width: 100%;
+}
+.main__container .content-card {
+  display: flex;
+  flex-direction: column;
+  height: 12rem;
+  justify-content: space-between;
+  padding: 1.5rem;
+}
+.main__container .content-card .title {
+  font-size: 18px;
+  line-height: 25px;
+  letter-spacing: -0.2px;
+}
+.main__container .content-card .description {
+  color: rgba(245, 245, 245, 0.6);
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 20px;
+  letter-spacing: 0.2px;
+}
+.main__container .content-card .new-offer, .main__container .content-card .main__container-cards-top .promo .old-offer, .main__container .main__container-cards-top .promo .content-card .old-offer {
+  font-size: 22px;
+  line-height: 25px;
+  letter-spacing: -0.5px;
 }
 
 /*# sourceMappingURL=card_chris.css.map */
