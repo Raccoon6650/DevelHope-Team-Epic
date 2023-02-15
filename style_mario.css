@@ -264,6 +264,10 @@ table {
     margin-right: auto;
 }
 
+.nav__tendina__tab{
+	display: none;
+}
+
 .nav__ricerca__sinistra{
 	display: flex;
 	flex-direction: row;
@@ -414,8 +418,26 @@ column-gap: 5%;
 	.main__gratis__card{
 		height: 60%;
 	}
-	
+	/*.nav1{
 		
+	}*/
+		
+}
+
+
+@media (max-width: 1023px){
+
+	/*.nav__tendina__tab{
+		display: block;
+	}
+	.nav__ricerca__interna{
+		display: flex;
+		margin-top: 10%;
+		position: relative;
+		cursor: pointer;
+		height: 4.9em;
+		width: auto;
+	}*/
 }
 
 body{
