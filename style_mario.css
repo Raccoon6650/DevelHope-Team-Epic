@@ -288,9 +288,9 @@ table {
 	color: #ffffff;
 }
 
-.nav__ric:focus {
-outline: none;
-}
+.nav_ric:focus {
+	outline: none;
+	}
 
 .nav__lente{
 	width:10.8px;
@@ -345,7 +345,8 @@ outline: none;
 .main__gratis__visualizza{
 	background-color: rgba(255, 255, 255, 0.1) ;
 	color: var(--font-color-active);
-	border: 2px solid var(--font-color-active);
+	font-weight: bold;
+	border: 0.5px solid var(--font-color-active);
 	border-radius: 5px;
 	text-decoration: none;
 	font-size: 12px;
@@ -368,6 +369,8 @@ column-gap: 5%;
 .main__gratis__card{
     width: 100%;
 	cursor: pointer;
+	border-top-right-radius: 5px;
+	border-top-left-radius: 5px;
 }
 
 .main__ora__gratis{
@@ -376,6 +379,8 @@ column-gap: 5%;
 	justify-content: center;
 	position: relative;
 	bottom: 15px;
+	border-bottom-right-radius: 5px;
+	border-bottom-left-radius: 5px;
 }
 .main__in__arrivo {
 	display: flex;
@@ -383,6 +388,8 @@ column-gap: 5%;
 	justify-content: center;
 	position: relative;
 	bottom: 15px;
+	border-bottom-right-radius: 5px;
+	border-bottom-left-radius: 5px;
 }
 .main__gratis__txt{
 	font-weight: bold;
@@ -391,5 +398,22 @@ column-gap: 5%;
 }
 
 .main__gratis__disp{
-	color: var(--font-color-active);
+	color: var(--font-color-disable);
+	font-weight: bold;
+	padding: 1rem 0 ;
+}
+
+@media (max-width: 768px){
+	.main__giochi__gratis{
+		display: flex;
+		width: 100%;
+		flex-direction: column;
+		column-gap: 2px;
+		}
+
+	.main__gratis__card{
+		height: 60%;
+	}
+	
+		
 }
