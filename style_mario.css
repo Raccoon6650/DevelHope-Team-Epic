@@ -93,28 +93,46 @@ table {
 	align-items: center;
 	justify-content:left;
 	gap: 0.4rem;
+	height: 100%;
 }
 .nav__sx__logo{
 	padding: 6px;
 }
-.nav_sx_link{
+.nav__sx__link{
     display: flex;
-    justify-items: stretch;    
+    justify-items: stretch;   
+	flex-direction: column; 
+	height: 100%;
 } 
 
-.nav__sx__link:hover{
-    
-    border-bottom: 0.2rem solid var(--theme-color);
-
-}
 
 
 .nav__link {
+	display: flex;
+	align-items: center;
+	height: 100%;
 	text-decoration: none;
 	transition: text-decoration 500ms;
-	color: var(--icons-color);
+	color: var(--font-color-disable);
+	padding: 0 1rem;
+}
+
+.nav__sx__barra{
+	height: 5px;
+	background-color: var(--theme-color);
+	transform:translateY(+5px);
+}
+
+.nav__link:hover{
+	color: var(--font-color-active);
+}
+
+.nav__sx__link:hover .nav__sx__barra{
+	transform:translateY(0px);
+	transition: 100ms;
 	
 }
+
 
 
 .ottineni{
