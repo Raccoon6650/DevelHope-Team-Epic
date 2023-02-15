@@ -1,0 +1,119 @@
+.main__container {
+  width: 100%;
+  height: auto;
+  margin: 3rem;
+
+  .main__container-cards-top {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    .main__container-bar {
+      width: 100%;
+      height: 30px;
+      display: flex;
+      justify-content: space-between;
+      flex-direction: row;
+      .bar__container {
+        width: auto;
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        gap:0.7rem;
+        span {
+          font-size: 1.5rem;
+          a {
+            text-decoration: none;
+          }
+        }
+        .svg-arrow {
+          width: 2rem;
+          height: 100%;
+          display: flex;
+          align-items: center;
+
+          svg {
+            width: 8px;
+            height: 8px;
+            padding-left: 0.5rem;
+          }
+        }
+      }
+      .right {
+        display: flex;
+        justify-content: flex-end;
+        flex-direction: row;
+
+        .right__arrow {
+          width: 30px;
+          height: 30px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          border-radius: 50%;
+          background-color: rgb(34, 33, 33);
+
+
+
+          button {
+            border: none;
+            background-color: transparent;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            svg {
+              width: 12px;
+              height: 12px;
+            }
+          }
+        }
+      }
+    }
+
+    // dddù
+    .main__container-cards{
+        width: 100%;
+        display: flex;
+        gap:1rem;
+        flex-wrap: nowrap;
+
+
+
+
+
+
+        .container-card{
+          width: auto;
+          height:auto;
+
+
+          img{
+            width: 100%;
+            height: 100%;
+            border-radius: 0.3rem;
+
+
+          }
+          .game{
+            width: 100%;
+            .percentage{
+                
+            }
+            .base{
+
+            }
+            .promo{
+
+            }
+          }
+
+
+
+
+        }
+    }
+  }
+}
