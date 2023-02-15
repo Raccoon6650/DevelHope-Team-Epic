@@ -10,8 +10,6 @@ main {
     margin-top: 8rem;
 	margin-bottom: 50px;
 	background-color: var(--background-color);
-	height: 65vh;
-	overflow-y: hidden;
 }
 
 .main__carousel_div {
@@ -20,30 +18,30 @@ main {
 	background-color: var(--background-color);
 	display: flex;
 	min-height: max-content;
+	position: relative;
 }
 
-.main__carousel_game {
-	background-image: url('https://cdn2.unrealengine.com/egs-deadspace-motivestudio-g1a-08-1920x1080-51142bbd1bc3.jpg');
-	background-position: center;
-	width: 100%;
-	height: auto;
-	background-color: #cccccc;
-	border-radius: 20px;
+.main__carousel_div > img {
+	height: 100%;
+	width: 80%;
 	position: relative;
 	cursor: pointer;
-	
+	border-radius: 20px;
+	min-height: 320px;
 }
 
 .main__carousel_game_div {
 	display: flex;
 	flex-direction: column;
-	align-items: flex-start;
-	justify-content: space-between;
+	justify-content: flex-end;
 	width: 40%;
-	height: 70%;
-	bottom: 5%;
 	left: 5%;
+	bottom: 5%;
 	position: absolute;
+}
+
+.main__carousel_game_logo {
+	height: 40%;
 }
 
 .main__carousel_game_logo > img{
@@ -53,13 +51,10 @@ main {
 .main__carousel_game_description {
 	display: flex;
 	flex-direction: column;
-	justify-content: space-between;
-	width: 100%;
-	height: 50%;
-}
-
-.main__carousel_game_description_div {
-	width: 100%;
+	justify-content: flex-end;
+	gap: 2rem;
+	width: 80%;
+	height: 60%;
 }
 
 .main__carousel_game_description > span {
@@ -73,6 +68,17 @@ main {
 	font-size: 1.5rem;
 }
 
+.main__carousel_buy_options {
+	height: 50%;
+}
+
+.main__carousel_buy_options > span {
+	color: var(--font-color-active);
+	font-size: 1rem;
+	font-weight: 400;
+	font-family: inherit;
+}
+
 .main__carousel_game_description_buy {
 	position: relative;
 	height: 50%;
@@ -84,6 +90,7 @@ main {
 	display: flex;
 	align-items: center;
 	gap: 1rem;
+	margin-top: 1rem;
 }
 
 .btn {
@@ -97,20 +104,21 @@ main {
 
 .main__carousel_buy_button {
 	background-color: white;
+	min-width: 150px;
 }
 
 .main__carousel_wish_button {
 	display: flex;
 	align-items: center;
-	justify-content: space-around;
 	background-color: transparent;
 	color: var(--font-color-active);
 	gap: 1rem;
-	transition: 0.3s;
+	min-width: 180px;
 }
 
 .main__carousel_wish_button:hover {
 	background-color: rgba(255, 255, 255, 0.244);
+	transition: 0.3s;
 }
 
 .main__carousel_game_list {
@@ -131,8 +139,8 @@ main {
 }
 
 .main__carousel_game_list a div > img {
-	width: 35%;
-	min-width: 50px;
+	width: 30%;
+	min-width: 30px;
 	border-radius: 8px;
 	margin-right: 0.8rem;
 	margin-left: 1rem;
@@ -145,7 +153,7 @@ main {
 
 .main__carousel_game_list a > div {
 	color: var(--font-color-active);
-	font-size: 1.1rem;
+	font-size: 1rem;
 	line-height: 1.3;
 	width: 90%;
 	height: 100%;
@@ -158,22 +166,58 @@ main {
      width: 90%;
 }
 
-@media (max-width:1400px) {
-	#main__carousel_section{
-		height: 100%;
+ @media (max-width:1500px) {
+	.main__carousel_buy_button {
+	font-size: 0.8rem;
+}
+	.main__carousel_wish_button {
+		font-size: 0.8rem;
 	}
-	.main__carousel_game {
+
+	.main__carousel_game_logo > img {
+		width: 200px;
+	}
+	.main__carousel_game_list a > div {
+	font-size: 0.8rem;
+}
+} 
+
+@media (max-width: 1200px) {
+	.main__carousel_game_description > span {
+	font-size: 0.8rem;
+	}
+	
+	.main__carousel_game_description > span:nth-child(2) {
+		font-size: 1rem;
+	}
+	.main__carousel_game_logo > img {
+		width: 150px;
+	}
+	.main__carousel_game_list a > div {
+	font-size: 0.7rem;
+	}
+}
+
+@media (max-width: 768px) {
+	.main__carousel_game_div {
+		display: none;
+	}
+	.main__carousel_div > img {
 		display: none;
 	}
 	.main__carousel_game_list {
 		width: 100%;
 		height: 100%;
-		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+		display: flex;
+		justify-content: initial;
+		margin: initial;
+		flex-direction: row;
 		gap: 1rem;
+		overflow: auto;
 	}
 	.main__carousel_game_list a > div {
-		width: 100%;
+		height: 700px;
+		width: 500px;
 		display: flex;
 		flex-direction: column;
 		justify-content: space-around;
