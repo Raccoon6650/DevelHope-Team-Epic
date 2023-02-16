@@ -80,15 +80,16 @@ table {
 }
 
 .nav__dx{
-	width:25%;
+	width:30%;
 	display: flex;
 	align-items: center;
 	justify-content: flex-end;
 	color: var(--icons-color);
 	gap: 20px;
+	height: 100%;
 }
 .nav__sx{
-	width: 35%;
+	width: 40%;
 	display: flex;
 	align-items: center;
 	justify-content:left;
@@ -118,9 +119,9 @@ table {
 }
 
 .nav__sx__barra{
-	height: 5px;
+	height: 6px;
 	background-color: transparent;
-	transform:translateY(+5px);
+	transform:translateY(+6px);
 }
 
 .nav__link:hover{
@@ -142,7 +143,7 @@ table {
 	height: 100%;
 	color: var(--button-color);
 	text-decoration: none;
-	padding: 1.4rem;
+	padding-left: 0.2rem;
 	font-size: 10px;
 	
 }
