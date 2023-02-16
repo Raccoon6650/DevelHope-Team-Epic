@@ -139,10 +139,10 @@ table {
 	display: flex;
 	align-items: center;
 	background-color: var(--theme-color);
-	height: 4.9em;
+	height: 100%;
 	color: var(--button-color);
 	text-decoration: none;
-	padding: 5px;
+	padding: 1.4rem;
 	font-size: 10px;
 	
 }
@@ -154,7 +154,7 @@ table {
 
 .nav__mondo{
 	display: flex;
-	margin-top: 10%;
+	margin-top: 8%;
 	position: relative;
     cursor: pointer;
 	height: 4.9em;
