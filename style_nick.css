@@ -7,7 +7,7 @@ main {
 }
 
 #main__carousel_section {
-    margin-top: 8rem;
+    margin-top: 1rem;
 	margin-bottom: 50px;
 	background-color: var(--background-color);
 }
