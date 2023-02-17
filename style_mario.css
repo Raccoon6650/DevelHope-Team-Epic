@@ -97,7 +97,7 @@ table {
 	height: 100%;
 }
 .nav__sx__logo{
-	padding: 6px;
+	padding-left: 1rem;
 }
 .nav__sx__link{
     display: flex;
@@ -292,11 +292,8 @@ table {
 	height: 40px;
 	border-style: none;
 	color: #ffffff;
-}
-
-.nav_ric:focus {
 	outline: none;
-	}
+}
 
 .nav__lente{
 	width:10.8px;
