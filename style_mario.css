@@ -97,7 +97,7 @@ table {
 	height: 100%;
 }
 .nav__sx__logo{
-	padding-left: 1rem;
+	padding: 6px;
 }
 .nav__sx__link{
     display: flex;
@@ -292,8 +292,11 @@ table {
 	height: 40px;
 	border-style: none;
 	color: #ffffff;
-	outline: none;
 }
+
+.nav_ric:focus {
+	outline: none;
+	}
 
 .nav__lente{
 	width:10.8px;
@@ -405,6 +408,15 @@ column-gap: 5%;
 	font-weight: bold;
 	padding: 1rem 0 ;
 }
+.nav__hamburger {
+	display: none;
+}
+.responsive__search{
+	display: none;
+}
+.responsive__find{
+	display: none;
+}
 
 @media (max-width: 768px){
 	.main__giochi__gratis{
@@ -417,9 +429,36 @@ column-gap: 5%;
 	.main__gratis__card{
 		height: 60%;
 	}
-	/*.nav1{
-		
-	}*/
+
+	.nav__hamburger{
+		display: flex;
+		justify-content: center;
+		width: 50px;
+		height: 100%;
+		background-color: #007aff;
+	}
+
+	.nav__sx__link,
+	.nav__mondo,	
+	.nav__user__container,
+	.ottineni{
+		display: none;
+	}
+	.nav2__container{
+		display: none;
+	}
+	.responsive__search{
+		display: flex;
+		padding-left: 1rem;
+	}
+	.nav__lente{
+		width: 15px;
+		height: 15px;
+		fill: var(--font-color-disable);
+	}
+	.responsive__scopri{
+		color: #ffffff;
+	}
 		
 }
 
