@@ -133,7 +133,10 @@ table {
 	transition: 200ms;
 	background-color: var(--theme-color);
 }
-
+.nav__sx__link.selected .nav__sx__barra {
+	transform:translateY(0px);
+	background-color: var(--theme-color);
+}
 
 
 .ottineni{
