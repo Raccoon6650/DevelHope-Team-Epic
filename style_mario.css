@@ -130,7 +130,7 @@ table {
 
 .nav__sx__link:hover .nav__sx__barra{
 	transform:translateY(0px);
-	transition: 100ms;
+	transition: 200ms;
 	background-color: var(--theme-color);
 }
 
