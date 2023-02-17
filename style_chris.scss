@@ -6,8 +6,6 @@
   flex-direction: column;
   gap: 4rem;
 
-
-
   .main__container-cards-top {
     width: 100%;
     height: auto;
@@ -79,14 +77,14 @@
       }
     }
 
-    // dddù
+    // contenitore card
     .main__container-cards {
       width: 100%;
       display: flex;
       gap: 1rem;
 
       .container-card {
-        width: 250px;
+        width: 100%;
         height: auto;
         display: flex;
         gap: 1rem;
@@ -141,6 +139,11 @@
         letter-spacing: 1px;
         font-weight: 500;
       }
+      .wrap {
+        display: flex;
+        gap: 1rem;
+        flex-wrap: wrap;
+      }
       .new-offer {
         letter-spacing: 0.2px;
         font-weight: normal;
@@ -156,79 +159,109 @@
     width: 100%;
     height: auto;
     display: flex;
-    flex-direction:row;
-    justify-content:space-between;
+    flex-direction: row;
+    justify-content: space-between;
     gap: 1.5rem;
-    overflow-x: visible;
+
+    transform: translate3d(0px, 0px, 0px);
 
     .container-card {
-        width: auto;
-        height: auto;
-        display: flex;
-        gap: 1rem;
-        flex-direction: column;
+      width: auto;
+      height: auto;
+      display: flex;
+      gap: 1rem;
+      flex-direction: column;
 
-        .container-card-img {
-          position: relative;
-          img {
-            width: 100%;
-            height: 100%;
-            border-radius: 0.3rem;
-          }
-          .add-game {
-            width: 18px;
-            height: 18px;
-            border-radius: 50%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            position: absolute;
-            top: 0.5rem;
-            right: 0.5rem;
-            background-color: white;
-            border: 2px solid white;
-          }
+      .container-card-img {
+        position: relative;
+        img {
+          width: 100%;
+          height: 100%;
+          border-radius: 0.3rem;
+        }
+        .add-game {
+          width: 18px;
+          height: 18px;
+          border-radius: 50%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          position: absolute;
+          top: 0.5rem;
+          right: 0.5rem;
+          background-color: white;
+          border: 2px solid white;
         }
       }
     }
+  }
 
-
-    .game {
-      width: 100%;
-    }
-    .content-card{
-        display: flex;
-        flex-direction: column;
-        height: 12rem;
-        justify-content: space-between;
-        padding: 1.5rem;
-
+  .game {
+    width: 100%;
+  }
+  .content-card {
+    display: flex;
+    flex-direction: column;
+    height: 12rem;
+    justify-content: space-between;
+    padding: 1.5rem;
 
     .title {
-        font-size: 18px;
-        line-height: 25px;
-        letter-spacing: -0.2px;
+      font-size: 18px;
+      line-height: 25px;
+      letter-spacing: -0.2px;
     }
-    .description{
-        color: rgba(245, 245, 245, 0.6);
-        font-size: 14px;
-        font-weight: normal;
-        line-height: 20px;
-        letter-spacing: 0.2px;
-
-
+    .description {
+      color: rgba(245, 245, 245, 0.6);
+      font-size: 14px;
+      font-weight: normal;
+      line-height: 20px;
+      letter-spacing: 0.2px;
     }
 
-
-      .new-offer {
-
-        font-size: 22px;
-    line-height: 25px;
-    letter-spacing: -0.5px;
-      }
-
-
-
-
+    .new-offer {
+      font-size: 22px;
+      line-height: 25px;
+      letter-spacing: -0.5px;
+    }
+  }
 }
+@media screen and (min-width: 1024px) and (max-width: 1275px) {
+  .main__container .main__container-cards-top .promo .wrap {
+    flex-wrap: wrap;
+    width: 50%;
+    justify-content: flex-end;
+  }
 }
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  #invisible {
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  .main__container-cards,
+  .main__container-cards-bottom {
+    overflow-x:  auto;
+
+    cursor: pointer;
+
+    .container-card-img {
+      width:250px;
+    }
+  }
+}
+@media screen and (max-width: 368px){
+   .main__container-bar .right{
+    display: none;
+
+  }
+  .main__container-cards,
+  .main__container-cards-bottom {
+
+    overflow-x: auto;
+    .container-card-img {
+      width: 150px;
+    }
+
+  }
+};
