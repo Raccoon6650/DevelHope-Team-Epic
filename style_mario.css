@@ -155,7 +155,7 @@ table {
 
 .nav__mondo{
 	display: flex;
-	margin-top: 8%;
+	margin-top: 7%;
 	position: relative;
     cursor: pointer;
 	height: 4.9em;
@@ -193,6 +193,7 @@ table {
 	color: var(--icons-color);
 	background: var(--main-color);
 	font-size: 10px;
+	
 }
 
 .nav__interno:hover{
