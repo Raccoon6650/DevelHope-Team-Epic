@@ -115,6 +115,25 @@ main {
 	gap: 1rem;
 	min-width: 180px;
 }
+.main__carousel_wish_button > span:nth-child(1) {
+	align-items: center;
+    background: rgb(28, 28, 28);
+    border-radius: 50%;
+    border: 2px solid rgb(245, 245, 245);    
+    display: flex;    
+    height: 15px;   
+    justify-content: center;    
+    width: 18px;
+	font-size: 20px;
+	padding-bottom: 3px;
+}
+.main__carousel_wish_button > span:nth-child(2) {
+	font-size: 9px;
+    line-height: 15px;
+    letter-spacing: 1px;
+	color: #f5f5f5;
+	font-weight: bold;
+}
 
 .main__carousel_wish_button:hover {
 	background-color: rgba(255, 255, 255, 0.244);
